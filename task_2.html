@@ -35,7 +35,7 @@
             border: none;
             border-radius: 4px;
             cursor: pointer;
-            width: 100%;
+            width: 45%;
             margin-top: 10px;
         }
         button:hover {
@@ -56,20 +56,35 @@
         <label for="age">Age <span style="color: red;">*</span></label>
         <input type="number" id="age" name="age" min="18" max="99" required>
 
-        <label for="gender">Gender</label>
-        <select id="gender" name="gender">
+        <label for="gender">Gender <span style="color: red;">*</span></label>
+        <select id="gender" name="gender" required>
             <option value="male">Male</option>
             <option value="female">Female</option>
-            <option value="other">Other</option>
         </select>
 
-        <label for="occupation">Occupation</label>
-        <input type="text" id="occupation" name="occupation">
+        <label for="country">Country of Residence <span style="color: red;">*</span></label>
+        <input type="text" id="country" name="country" required>
 
-        <label for="country">Country</label>
-        <input type="text" id="country" name="country">
+        <label for="areaOfInterest">Area of Interest <span style="color: red;">*</span></label>
+        <select id="areaOfInterest" name="areaOfInterest" required>
+            <option value="Software Development">Software Development</option>
+            <option value="Data Science">Data Science</option>
+            <option value="Cybersecurity">Cybersecurity</option>
+            <option value="Artificial Intelligence">Artificial Intelligence</option>
+        </select>
+
+        <label for="experienceLevel">Experience Level <span style="color: red;">*</span></label>
+        <select id="experienceLevel" name="experienceLevel" required>
+            <option value="Beginner">Beginner</option>
+            <option value="Intermediate">Intermediate</option>
+            <option value="Advanced">Advanced</option>
+        </select>
+
+        <label for="comments">Comments or Questions</label>
+        <textarea id="comments" name="comments" rows="4"></textarea>
 
         <button type="submit">Register</button>
+        <button type="reset">Reset</button>
     </form>
 
 </body>
